@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="main">
+    <section class="game-container">
+        <div class="board-heading">
+            <h1>Number Guessing Game</h1>
+        </div>
+        <div class="infos">
+            <div class="high-score">
+                <h3>High Score:</h3>
+                <span id="high-score">0</span>
+            </div>
+            <div class="guesses">
+                <h3>Guesses:</h3>
+                <span id="current-guesses">0</span>
+            </div>
+            
+        </div>
+
+        <ul class="board">
+                
+        </ul>
+        
+    
+        <div class="modal-start">
+             <div class="modal-content">
+                    <h3>Welcome to Guessing Game</h3>
+                    <button class="btn btn-start">Start Game</button>
+            </div>
+         </div>
+
+       <div class="modal-restart hidden">
+    <div class="modal-content">
+        <h1>You WON!!</h1>
+
+        <h3>
+            Guesses:
+            <span id="final-guess-count"></span>
+        </h3>
+
+        <h3>Wanna Play AGAIN??</h3>
+
+        <button class="btn btn-restart">Restart Game</button>
+    </div>
+</div>
+
+        <div class="emojis-section">
+             <div class="feedback-emoji"></div>
+                <div class="feedback-message"></div>
+        </div>
+    </section>
+</main>    
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
