@@ -9,12 +9,19 @@ Projects are added progressively as I learn and apply new concepts.
 | No. | Project | Concepts Practiced |
 | --- | --- | --- |
 | 01 | Number Guessing Game | DOM Manipulation, Event Delegation, Game State, localStorage |
+| 02 | Tic Tac Toe | DOM Manipulation, Event Handling, Arrays, Game State, Win Condition Logic |
 
 ## Repository Structure
 
     JS-MINI-PROJECTS/
     │
     ├── 01-Number-Guessing-Game/
+    │   ├── index.html
+    │   ├── style.css
+    │   ├── script.js
+    │   └── README.md
+    │ 
+    ├── 02-Tic-Tac-Toe/
     │   ├── index.html
     │   ├── style.css
     │   ├── script.js
