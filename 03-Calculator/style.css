@@ -1,0 +1,234 @@
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+/* ===========================
+   VARIABLES
+=========================== */
+
+:root {
+
+    /* Background Colors */
+    --bg-primary-color: #dbeafe;
+    --calculator-bg: #f8fafc;
+    --display-bg: #1e293b;
+
+    /* Text Colors */
+    --text-primary-color: #1e293b;
+    --text-light: #f8fafc;
+
+    /* Button Colors */
+    --number-btn: #ffffff;
+    --operator-btn: #bfdbfe;
+    --action-btn: #fecaca;
+    --equal-btn: #2563eb;
+
+    --action-text: #991b1b;
+
+    /* Border */
+    --border-primary-color: #333333;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 40px;
+    --space-3xl: 48px;
+
+    /* Border Radius */
+    --border-radius-xs: 4px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 20px;
+    --border-radius-2xl: 24px;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+body {
+    background-color: var(--bg-primary-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===========================
+   CALCULATOR
+=========================== */
+
+.calculator {
+    background-color: var(--calculator-bg);
+    color: var(--text-primary-color);
+
+    border: 1px solid var(--border-primary-color);
+    border-radius: var(--border-radius-sm);
+
+    padding: var(--space-3xl);
+
+    width: 380px;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================
+   DISPLAY
+=========================== */
+
+.calculator-display {
+
+    width: 100%;
+    min-height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding: var(--space-md) var(--space-lg);
+
+    background-color: var(--display-bg);
+    color: var(--text-light);
+
+    border-radius: var(--border-radius-sm);
+
+    margin-bottom: var(--space-md);
+
+    overflow: hidden;
+}
+
+.expression {
+
+    width: 100%;
+
+    text-align: right;
+
+    color: #cbd5e1;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    min-height: 22px;
+
+    word-break: break-all;
+}
+
+.display-value {
+
+    width: 100%;
+
+    text-align: right;
+
+    font-size: 2rem;
+    font-weight: 600;
+
+    word-break: break-all;
+}
+
+/* ===========================
+   BUTTON GRID
+=========================== */
+
+.calculator-buttons {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: var(--space-sm);
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+/* ===========================
+   COMMON BUTTON STYLES
+=========================== */
+
+.calculator-buttons button {
+
+    height: 55px;
+
+    border: 1px solid var(--border-primary-color);
+    border-radius: var(--border-radius-sm);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        transform 0.1s ease;
+}
+
+/* ===========================
+   NUMBER BUTTONS
+=========================== */
+
+.calculator-buttons .number {
+
+    background-color: var(--number-btn);
+    color: var(--text-primary-color);
+}
+
+/* ===========================
+   OPERATOR BUTTONS
+=========================== */
+
+.calculator-buttons .operator {
+
+    background-color: var(--operator-btn);
+    color: var(--text-primary-color);
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+
+.calculator-buttons .action {
+
+    background-color: var(--action-btn);
+    color: var(--action-text);
+}
+
+/* ===========================
+   EQUAL BUTTON
+=========================== */
+
+.calculator-buttons .equal {
+
+    background-color: var(--equal-btn);
+    color: var(--text-light);
+}
+
+/* ===========================
+   BUTTON EFFECTS
+=========================== */
+
+.calculator-buttons button:hover {
+
+    filter: brightness(95%);
+}
+
+.calculator-buttons button:active {
+
+    transform: scale(0.97);
+}

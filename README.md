@@ -10,6 +10,7 @@ Projects are added progressively as I learn and apply new concepts.
 | --- | --- | --- |
 | 01 | Number Guessing Game | DOM Manipulation, Event Delegation, Game State, localStorage |
 | 02 | Tic Tac Toe | DOM Manipulation, Event Handling, Arrays, Game State, Win Condition Logic |
+| 03 | Calculator | DOM Manipulation, Event Handling, State Management, Functions, Conditional Logic |
 
 ## Repository Structure
 
@@ -26,6 +27,12 @@ Projects are added progressively as I learn and apply new concepts.
     │   ├── style.css
     │   ├── script.js
     │   └── README.md
+    │
+    │── 03-Calculator/
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    └── README.md
     │
     └── README.md
 
