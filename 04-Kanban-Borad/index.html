@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Makes the page responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Give your page a meaningful title -->
+    <title>Kanban Board</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+
+        <!-- ================= NAVBAR ================= -->
+        <nav>
+            <div class="left">
+                Kanban
+            </div>
+
+            <div class="right">
+                <button id="toggle-modal">
+                    Add New Task
+                </button>
+            </div>
+        </nav>
+
+        <!-- ================= BOARD ================= -->
+        <section class="board">
+
+            <!-- TODO COLUMN -->
+            <div id="todo" class="task-column">
+
+                <div class="heading">
+                    <div class="left">To Do</div>
+                    <div class="right">Count</div>
+                </div>
+
+                <!-- Tasks will be inserted here dynamically -->
+
+            </div>
+
+            <!-- PROGRESS COLUMN -->
+            <div id="progress" class="task-column">
+
+                <div class="heading">
+                    <div class="left">In Progress</div>
+                    <div class="right">Count</div>
+                </div>
+
+            </div>
+
+            <!-- DONE COLUMN -->
+            <div id="done" class="task-column">
+
+                <div class="heading">
+                    <div class="left">Done</div>
+                    <div class="right">Count</div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= ADD TASK MODAL ================= -->
+    <div class="modal add-new-task">
+
+        <!-- Clicking this background closes the modal -->
+        <div class="bg"></div>
+
+        <div class="center">
+
+            <input
+                type="text"
+                id="task-title-input"
+                placeholder="Task Title"
+            >
+
+            <textarea
+                id="task-desc-input"
+                placeholder="Task Description"
+            ></textarea>
+
+            <button
+                id="add-new-task"
+                class="add-task-btn"
+            >
+                Add Task
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
