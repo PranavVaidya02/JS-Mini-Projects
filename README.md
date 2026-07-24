@@ -10,7 +10,7 @@ Projects are added progressively as I learn and apply new concepts.
 | 02  | Tic Tac Toe          | DOM Manipulation, Event Handling, Arrays, Game State, Win Condition Logic                                     |
 | 03  | Calculator           | DOM Manipulation, Event Handling, State Management, Functions, Conditional Logic                              |
 | 04  | Kanban Board         | DOM Manipulation, Drag and Drop API, localStorage, Dynamic Element Creation, Event Handling, State Management |
-
+|05   |Snake Game            |DOM Manipulation, Keyboard Events, CSS Grid, Arrays & Objects, Game Loop, Collision Detection, Local Storage   |
 ## Repository Structure
 
 ```
@@ -38,6 +38,12 @@ JS-MINI-PROJECTS/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
+│   └── README.md
+│
+├── 05-Snake-Game/ 
+│   ├── index.html 
+│   ├── style.css  
+│   ├── script.js 
 │   └── README.md
 │
 └── README.md
